@@ -9,6 +9,11 @@
   --primary-text-color: #C9D7E3;
   --secondary-text-color: #B0A99F;
   --accent-text-color: #5ECFFF;
+  --default-color-blue: #53A7E0;
+  --default-color-yellow: #F3C55A;
+  --default-color-orange: #DF6339;
+  --default-color-pink: #E396C5;
+  --default-color-green: #39DF63;
   --default-border-radius: .8rem;
 }
 
@@ -80,10 +85,23 @@ body {
   font-weight: bolder;
 }
 
+.personal .bubbles {
+  padding: 1rem 0;
+  display: flex;
+  gap: .85rem;
+  flex-wrap: wrap;
+}
+
+.personal .bubbles span {
+  background: red;
+  color: #000;
+  padding: .5rem 1rem;
+  border-radius: 4rem;
+}
+
 .about span a {
   color: var(--secondary-text-color);
 }
-
 
 /*
 * Add new sections here
@@ -155,6 +173,19 @@ footer {
   margin: 0 .4rem .25rem 0;
   vertical-align: middle;
   filter: invert(1);
+}
+
+.projects article span:first-child {
+  padding-left: 20px;
+}
+
+.projects article span:first-child::before {
+  content: '';
+  margin-left: -20px;
+  width: 5px;
+  height: 25px;
+  background-color: var(--accent-text-color);
+  position: absolute;
 }
 
 footer {
