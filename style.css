@@ -30,7 +30,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-image: url('assets/svgs/pattern.svg'), linear-gradient(to bottom right, #0C1222, #0D162C);
+  background-image: linear-gradient(to bottom right, #0C1222, #0D162C);
   background-repeat: repeat;
 }
 
