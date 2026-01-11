@@ -31,8 +31,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-image: linear-gradient(to bottom right, #0C1222, #0D162C);
-  background-repeat: repeat;
+  background-image: linear-gradient(to top, #1a2951, #0D162C);
 }
 
 .personal h1 {
