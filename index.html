@@ -2,150 +2,153 @@
 <html>
 
 <head>
-  <title>Pedro Ribeiro - Portfolio 2025</title>
+  <title>Pedro Ribeiro - Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
-<body>
-  <section class="personal">
-    <h1>Pedro Ribeiro</h1>
-    <h3>Fullstack Engineer</h3>
-    <span>Hi &#128075; I'm a professional Software Engineer. My favorite technologies are C/C++ for
-      low level development. Here is a small portion of my skills:</span>
-    <div class="bubbles">
-      <span style="background: var(--default-color-green);">C/C++</span>
-      <span style="background: var(--default-color-blue);">Embedded</span>
-      <span style="background: var(--default-color-yellow);">IoT</span>
-      <span style="background: var(--default-color-orange);">HTML</span>
-      <span style="background: var(--default-color-pink);">CSS</span>
-      <span style="background: var(--default-color-green);">JavaScript</span>
-      <span style="background: var(--default-color-blue);">Linux</span>
-      <span style="background: var(--default-color-yellow);">Angular</span>
-      <span style="background: var(--default-color-orange);">Node</span>
-      <span style="background: var(--default-color-pink);">Docker</span>
-      <span style="background: var(--default-color-green);">.NET/C#</span>
-      <span style="background: var(--default-color-blue);">Redis</span>
-      <span style="background: var(--default-color-yellow);">Elastic Search</span>
-      <span style="background: var(--default-color-orange);">VMs</span>
-    </div>
-    <div class="repos">
-      <a href="https://www.github.com/beyluta" target="_blank"><img class="github" alt="github svg"
-          src="assets/svgs/github.svg" /></a>
-      <a href="https://www.codeberg.org/beyluta" target="_blank"><img alt="codeberg img"
-          src="assets/imgs/codeberg.png" /></a>
-    </div>
-    <a href="#top"><span>About</span></a>
-    <a href="#projects"><span>Projects</span></a>
-  </section>
+<body class="font__roboto">
+      <!-- Navigation bar of the website -->
+      <nav class="nav__topbar">
+          <h1>Pedro R.</h1>
+          <div class="box__anchors font__jetbrains--mono">
+            <a href="#home">home</a>
+            <a href="#expertise">expertise</a>
+            <a href="#work">work</a>
+            <a href="#experience">experience</a>
+            <a href="#contact">contact</a>
+        </div>
+      </nav>
 
-  <section class="about">
-    <h2>About me</h2>
-    <span>I'm a Software Developer based in Switzerland. My passion is contributing back to Open Source software
-      in any way I can.<br><br>My belief is that the path forward for technology can only be forged by
-      uniting developers around the globe. Never gatekeeping knowledge, always giving back to the community that has
-      improved the lives of many each and every day.<br><br>A goal of mine is to work with low level languages such as
-      C, C++,
-      Rust or Zig for IoT or Embedded projects in a professional capacity.<br><br>Reading is one of my few hobbies, and
-      my favorite book is
-      "The Pragmatic Programmer" by David
-      Thomas and Andrew Hunt, it is a must-read for everyone looking to hone their logical and critical thinking
-      skills.</span>
-  </section>
+    <!-- Hero section of the website -->
+    <section class="section__hero" id="home">
+      <h1>Pedro Ribeiro</h1>
+      <span class="font__jetbrains--mono">Mobile, Software & Web Development</span>
+      <i class="fa-solid fa-angle-down"></i>
+    </section>
 
-  <section class="contributions">
-    <h2>Contributions</h2>
-    <span>Projects that I've contributed to. Check them out, they are awesome!</span>
-    <div class="contribution-item">
-      <h3><a href="https://www.github.com/almamu/linux-wallpaperengine" target="_blank">Linux Wallpaper Engine Backend
-          (C++)</a></h3>
-      <span>An open source Linux wallpaper engine that supports Steam Workshop wallpapers.</span>
-    </div>
-  </section>
+    <!-- My expertise -->
+    <section class="section__expertise font__jetbrains--mono" id="expertise">
+      <h1 class="section__title">My Expertise</h1>
+      <div class="grid__expertise">
+        <div class="grid__expertise--skill">
+          <h2><i class="fa-solid fa-display"></i>Software Dev</h2>
+          <span>Experienced in native and hybrid software development with languages like C# and JS/Electron for Windows, MacOS, and Linux.</span>
+        </div>
+        <div class="grid__expertise--skill">
+          <h2><i class="fa-brands fa-angular"></i>Web Dev</h2>
+          <span>Experienced in the web development of websites and full-fledged applications with Angular and other such frameworks and libraries.</span>
+        </div>
+        <div class="grid__expertise--skill">
+          <h2><i class="fa-solid fa-mobile"></i>Mobile Dev</h2>
+          <span>Knowledged in the building and deployment of hybrid mobile applications using frameworks such as IONIC.</span>
+        </div>
+      </div>
+      <img src="assets/imgs/code.png" alt="code">
+    </section>
 
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
+    <!-- My work -->
+    <section class="section__work font__jetbrains--mono" id="work">
+      <div class="section__work--featured">
+        <h1>My&#10;Work</h1>
+        <img src="assets/imgs/winwidgets.png" alt="WinWidgets project image" />
+        <span>WinWidgets is a desktop widget application built for Windows 10/11. The application is fully open source and uses Windows-Native technologies
+        to display widgets in your desktop with minimal overhead. The application has been built with C/C++ using Microsoft's WebView 2 toolkit.</span>
+        <a href="https://github.com/beyluta/winwidgets" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </section>
 
-    <article>
-      <span>C/C++, Windows 11, Linux</span>
-      <h3>WinWidgets - Desktop Widgets</h3>
-      <span>WinWidgets makes web-based desktop widgets easy to develop using HTML, CSS, and JS. Made with a mix of
-        portability and native technologies for each supported operating system in mind.</span>
-      <img alt="WinWidgets image" src="assets/imgs/winwidgets.png" />
-      <a href="https://github.com/beyluta/winwidgets" target="_blank"><img alt="Open Source"
-          src="assets/svgs/oss.svg" />View Project</a>
-    </article>
+    <!-- My projects -->
+    <section class="section__work--projects">
+      <div class="box__project">
+        <img src="assets/imgs/unisetup.png" alt="unisetup">
+        <h3>Unisetup</h3>
+        <span>Create and distribute self-contained installer binaries for Linux.</span>
+        <a href="https://codeberg.org/beyluta/unisetup" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="box__project">
+        <img src="assets/imgs/larby.png" alt="larbydb">
+        <h3>Larby DB</h3>
+        <span>Key-Value database such as REDIS built with C++ for Linux, MacOS, and Windows.</span>
+        <a href="https://github.com/beyluta/larbydb" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="box__project">
+        <img src="assets/imgs/wallpaper.png" alt="wallpeper">
+        <h3>Linux WallpaperEngine GUI</h3>
+        <span>Native Linux UI built for Almamu's Linux WallpaperEngine project.</span>
+        <a href="https://codeberg.org/beyluta/linux-wallpaperengine-gui" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="box__project">
+        <img src="assets/imgs/termchat.png" alt="termchat">
+        <h3>TermChat</h3>
+        <span>Wrapper around OpenAI's completion API to integrate its models into the terminal.</span>
+        <a href="https://github.com/beyluta/termchat" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="box__project">
+        <img src="assets/imgs/celestune.png" alt="celestune">
+        <h3>Celestune - Music Player</h3>
+        <span>Web-based music player made with cross-platform compatibility in mind. Works as PWA on mobile devices.</span>
+        <a href="https://www.celestune.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="box__project">
+        <img src="assets/imgs/boundless.jpg" alt="crystillya">
+        <h3>Crystillya: Boundless - Unity Game</h3>
+        <span>A puzzle game inspired by the early flash game: Fireboy and Watergirl. Made with the Unity Engine for a game jam.</span>
+        <a href="https://narasuruwu.itch.io/crystillya-boundless" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="box__project">
+        <img src="assets/imgs/nixie.jpg" alt="crystillya">
+        <h3>Nixie and Feuer - Unity Game</h3>
+        <span>A puzzle where you control two characters and solve puzzles to advance through the levels.</span>
+        <a href="https://abzo.itch.io/nixie-and-feuer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </section>
 
-    <article>
-      <span>C, Linux</span>
-      <h3>Unisetup - Setup wizard for Linux</h3>
-      <span>Setup and installation wizard for Linux applications. Mirrors classic Microsoft Windows installers,
-        with a Open-Source twist. Complete with a basic scripting language for I/O operations.</span>
-      <img alt="WinWidgets image" src="assets/imgs/unisetup.png" />
-      <a href="https://codeberg.org/beyluta/unisetup" target="_blank"><img alt="Open Source"
-          src="assets/svgs/oss.svg" />View Project</a>
-    </article>
+    <section class="section__experience" id="experience">
+      <h1 class="section__title">Professional Experience</h1>
+      <div class="card__experience--header">
+        <h3>Software Engineer @ OS WORKS AG - Bottighofen, TG</h3>
+        <h3>2025 - 2026</h3>
+      </div>
+      <div class="card__experience--body">
+        <div class="list__bubbles">
+          <div>.NET</div>
+          <div>C#</div>
+          <div>WPF</div>
+          <div>XAML</div>
+          <div>MSSQL</div>
+        </div>
+        <span>Gathered experience working with Microsoft .NET technologies such as C#, WPF, and XAML. In my role as a software engineer, I have been entrusted to
+          develop, fix, and maintain features of applications used by the various companies world-wide such as TRUMPF and their partners & clients.</span>
+      </div>
 
-    <article>
-      <span>C/C++, Linux</span>
-      <h3>Linux Wallpaper Engine GUI</h3>
-      <span>WebKitGTK GUI Application for Almamu's Linux Wallpaper Engine backend.</span>
-      <img alt="TermChat image" src="assets/imgs/wallpaper.png" />
-      <a href="https://codeberg.org/beyluta/linux-wallpaperengine-gui" target="_blank"><img alt="Open Source"
-          src="assets/svgs/oss.svg" />View Source</a>
-    </article>
+      <div class="card__experience--header">
+        <h3>Software Engineer @ BMT AG - Bottighofen, TG</h3>
+        <h3>2023 - 2025</h3>
+      </div>
+      <div class="card__experience--body">
+        <div class="list__bubbles">
+          <div>Angular</div>
+          <div>NestJS</div>
+          <div>TypeScript</div>
+          <div>Firebase</div>
+          <div>Docker</div>
+          <div>Elastic search</div>
+        </div>
+        <span>Worked extensively with the Angular framework to build fast, reliable, and performant hybrid applications for multiple clients in the DACH region.
+          Other responsibilities included new implementations, refactoring, and maintenance of our backend services and databases.</span>
+      </div>
+    </section>
 
-    <article>
-      <span>AI, Linux, C/C++</span>
-      <h3>TermChat - A.I. Tool for your Terminal</h3>
-      <span>TermChat is an A.I. Chatbot integrated directly into your Linux terminal. It helps you execute commands and
-        run queries with minimal effort.</span>
-      <img alt="TermChat image" src="assets/imgs/termchat.png" />
-      <a href="https://github.com/beyluta/termchat" target="_blank"><img alt="Open Source"
-          src="assets/svgs/oss.svg" />View Source</a>
-    </article>
-
-    <article>
-      <span>Angular, TypeScript, PWA, Node, Express</span>
-      <h3>Celestune - Music Player</h3>
-      <span>Cross-platform music player PWA made to replace Spotify for private use. Automatically synchronizes user
-        settings between devices and can save songs to the device itself for faster playback.</span>
-      <img alt="Celestune image" src="assets/imgs/celestune.png" />
-      <a href="http://www.celestune.app" target="_blank"><img alt="Open Source" src="assets/svgs/link.svg" />View
-        Project</a>
-    </article>
-
-    <article>
-      <span>C++, Windows 11, Linux, MacOS</span>
-      <h3>Larby Database</h3>
-      <span>A key-value store like REDIS built with C++.</span>
-      <img alt="LarbyDB image" src="assets/imgs/larby.png" />
-    </article>
-
-    <article>
-      <span>.NET, C#, Unity3D</span>
-      <h3>Crystillya Boundless: Puzzle Game</h3>
-      <span>A puzzle game inspired by the early flash game: Fireboy and Watergirl. Made with the Unity Engine for a game
-        jam.</span>
-      <img alt="Boundless image" src="assets/imgs/boundless.jpg" />
-      <a href="https://narasuruwu.itch.io/crystillya-boundless" target="_blank"><img alt="Open Source"
-          src="assets/svgs/link.svg" />View Project</a>
-    </article>
-
-    <article>
-      <span>.NET, C#, Unity3D</span>
-      <h3>Nixie and Feuer: Puzzle Game</h3>
-      <span>A puzzle where you control two characters and solve puzzles to advance through the levels.</span>
-      <img alt="Generator image" src="assets/imgs/nixie.jpg" />
-      <a href="https://abzo.itch.io/nixie-and-feuer" target="_blank"><img alt="Open Source"
-          src="assets/svgs/link.svg" />View Project</a>
-    </article>
-  </section>
-
-  <footer>
-    <span>Copyright (c) 2026 Pedro Ribeiro. All Rights Reserved.</span>
-  </footer>
+    <footer id="contact">
+      <h1 class="font__jetbrains--mono">Looking for work in Switzerland</h1>
+      <span>Has my portfolio piqued your interest and you would like meet me?</span>
+      <a href="mailto:pedro.ribeiro.neto@proton.me"><h3>pedro.ribeiro.neto@proton.me</h3></a>
+      <a href="https://www.github.com/beyluta" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.codeberg.org/beyluta" target="_blank"><i class="fa-brands fa-codeberg"></i></a>
+    </footer>
 </body>
 
 </html>
